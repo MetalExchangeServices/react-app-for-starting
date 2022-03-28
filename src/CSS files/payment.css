@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.body-payment{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%)
+}
+.main-payment{
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    width: 60vw;
+    border-radius: 3vw;
+    margin: 5vw; 
+}
+.main-payment h1{
+    text-align: center;
+    margin: 2vw 2vw 1vw 2vw;
+    padding: 0.5vw 0vw;
+    border: 0.3vw dotted #cccace;
+    color: chartreuse;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4.7vw;
+    background: #fbfafe;
+    font-weight: bolder;
+    text-shadow: 0.1vw 0.1vw 0.4vw black;
+    letter-spacing: 0.1vw;
+}
+.form-payment{
+    margin: 2vw 2vw 1vw 2vw;
+    height: 100%;
+    width: 56vw;
+}
+.card-switch{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    justify-items: center;
+    align-items: center;
+    border: 0.2vw solid #e1e0e2;
+    background: #fbfafe;
+    border-radius: 2vw;
+}
+.card-switch input{
+    display: none;
+}
+.card-switch label{
+    display: flex;
+    width: 100%;
+    padding: 0.5vw 0vw;
+    justify-content: center;
+    font-size: 2.5vw;
+    align-items: center;
+    /* color: black; */
+    border: none;
+    border-radius: 2vw;
+}
+.card-switch p{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0.3vw;
+    font-weight: bolder;
+}
+.fields{
+    height: 4.5vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin-bottom: 1vw;
+    border: 0.2vw solid chartreuse;
+    background: chartreuse;
+}
+.paypal-fields{
+    display: none;
+}
+.credit-fields{
+    display: none;
+}
+.bitcoin-fields{
+    display: none;
+}
+.fields i{
+    width: 4.5vw;
+    height: 100%;
+    font-size: 3vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: chartreuse;
+    text-shadow: 0.1vw 0.1vw 0.2vw black;
+}
+.fields input{
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 2.5vw;
+    background: #fbfafe;
+    padding-left: 1vw;
+    font-family: 'Poppins', sans-serif;
+}
+.num-con{
+    height: 4.5vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+    margin-bottom: 2vw;
+}
+.num-con div{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content auto ;
+    border: 0.2vw solid chartreuse;
+    background: chartreuse;
+}
+.num-con div div{
+    background: white;
+}
+.num-con div p{
+    font-size: 2.5vw;
+    color: #757575;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 0.8vw;
+}
+.num-con i{
+    height: 100%;
+    width: 4.5vw;
+    font-size: 3vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: chartreuse;
+    border: 0.2vw solid chartreuse;
+    border-right: none;
+    text-shadow: 0.1vw 0.1vw 0.2vw black;
+}
+.num-con input{
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 2.5vw;
+    padding-left: 1vw;
+    border-left: none;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.num-con select{
+    overflow: scroll;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 1.5vw;
+    border: 0.2vw solid chartreuse;
+    background: #fbfafe;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 1vw;
+    appearance: none;
+    font-weight: bolder;
+    margin-left: 1vw;
+    padding-right: 1vw;
+}
+.pay-button{
+    border: none;
+    outline: none;
+    background: chartreuse;
+    height: 4.5vw;
+    width: 100%;
+    font-size: 3vw;
+    color: white;
+    font-weight: bolder;
+    border-radius: 3vw;
+    box-shadow: 0px 0px 0.4vw black;
+    text-shadow: 0.1vw 0.1vw 0.3vw black;
+}
+.pay-button i{
+    margin-right: 0.5vw;
+}
+#card-on{
+    background: linear-gradient(290deg, #56d8e4 10%, #9f01ea 90%);
+    color: white;
+    text-shadow: 0.1vw 0.1vw 0.2vw black;
+}
+#card-off{
+    background: #fbfafe;
+    color: black;
+    text-shadow: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+    .main-payment{
+        width: 80vw;
+    }
+    .form-payment{
+        width: 76vw;
+    }
+    .num-con select{
+        font-size: 2vw;
+    }
+    .num-con input{
+        width: 100%;
+        font-size: 3vw;
+    }
+    .num-con div p{
+        font-size: 3vw;
+    }
+    .pay-button{
+        height: 6vw;
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main-payment{
+        width: 90vw;
+    }
+    .main-payment h1{
+        font-size: 7.5vw;
+        border: 0.7vw dotted #cccace;
+    }
+    .form-payment{
+        width: 84vw;
+        margin: 4vw 3vw 4vw 3vw;
+    }
+    .card-switch{
+        margin-bottom: none;
+    }
+    .card-switch label{
+        font-size: 4.5vw;
+        height: 8vw;
+    }
+    .card-switch label i{
+        margin-right: 1vw;
+        font-size: 5.5vw;
+    }
+    .fields{
+        height: 7vw;
+        border: 0.4vw solid chartreuse;
+        margin-bottom: 2vw;
+    }
+    .fields i{
+        width: 7vw;
+        font-size: 5vw;
+    }
+    .fields input{
+        font-size: 4vw;
+    }
+    .num-con{
+        height: 7vw;
+    }
+    .num-con div{
+        border: 0.4vw solid chartreuse;
+    }
+    .num-con input{
+        height: 100%;
+        font-size: 4vw;
+    }
+    .num-con div p{
+        font-size: 4vw;
+    }
+    .num-con i{
+        width: 7vw;
+        font-size: 5vw;
+    }
+    .num-con select{
+        height: 7vw;
+        font-size: 2.5vw;
+        border: 0.6vw solid chartreuse;
+    }
+    .pay-button{
+        height: 8vw;
+        font-size: 5vw;
+        margin-top: 4vw;
+    }
+    .pay-button i{
+        font-size: 5vw;
+    }
+}

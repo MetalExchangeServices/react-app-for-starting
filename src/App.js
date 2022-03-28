@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import Login from './components/login';
+import Payment from './components/Payment';
+import FandQ from './components/FandQ';
+import Product from './components/product';
+import Store from './components/store';
+import Homepage from './components/homepage';
+import Error from './components/Error';
+import Loadingscreen from './components/Loadingscreen';
+import {Route, Switch} from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 
-function App() {
+const App = () => {
+  const history = useHistory();
+  useEffect(() => {
+    if (localStorage.getItem('page') === '/store') {
+      history.push('/store')
+    } else {
+      history.push('/')
+    }
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Loadingscreen/>
+    <Switch>
+      <Route exact path='/store' component={Store}/>
+      <Route exact path='/login' component={Login}/>
+      <Route exact path='/support' component={FandQ}/>
+      <Route exact path='/payment' component={Payment}/>
+      <Route exact path='/product' component={Product}/>
+      <Route exact path='/' component={Homepage}/>
+      <Route component={Error}/>
+    </Switch>
+    </>
+  )
 }
 
-export default App;
+export default App

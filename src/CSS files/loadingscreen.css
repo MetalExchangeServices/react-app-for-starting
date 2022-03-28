@@ -1,0 +1,50 @@
+.loading-screen-div{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #1e232c;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: loading-page;
+    animation-duration: 5s;
+    top: 0vh;
+}
+.loading-screen-span{
+        width: 50vw;
+        height: 0vh;
+        background: #56d8e4;
+        border-radius: 1vw;
+        margin-left: 25vw;
+        box-shadow: 0vh 0vh 2vh whitesmoke;
+        animation: loading-bar;
+        animation-duration: 5s;
+}
+
+@keyframes loading-bar {
+    0%{
+        width: 0vw;
+        height: 1vh;
+    } 30%{
+        width: 30vw;
+        height: 1vh;
+    } 60%{
+        width: 50vw;
+        height: 1vh;
+    } 80%{
+        width: 50vw;
+        height: 0vh;
+    } 100%{
+        width: 50vw;
+        height: 0vh;
+    }
+}
+@keyframes loading-page {
+    0%{
+        opacity: 1;
+    } 80%{
+        opacity: 1;
+    } 100%{
+        opacity: 0;
+    }
+}

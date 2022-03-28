@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@400;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.store{
+    width: 100vw;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    padding-bottom: 5vh;
+}
+.nav-bar{
+    background-color: #171c25;
+    display: flex;
+}
+.nav-bar span{
+    display: flex;
+    align-items: center;
+}
+.nav-bar span i{
+    display: none;
+    color: #fff;
+    font-size: 2vh;
+}
+.nav-bar span h1{
+    color: #fff;
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 0.5vw 4vw;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.1vw;
+}
+.slide-bar{
+    display: flex;
+    height: inherit;
+}
+.slide-bar .nav-button{
+    display: flex;
+    height: inherit;
+}
+.slide-bar .nav-button .nav-buttons{
+    color: aliceblue;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    padding: 0vw 1vw;
+    align-self: center;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.search-tab div{
+    order: 2;
+}
+.search-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45vw;
+}
+.search-tab input{
+    font-size: 1.5vw;
+    outline: none;
+    border: 0.3vw solid #a3b5ce;
+    background-color: #1e232c;
+    padding: 0.4vw;
+    color: #a3b5ce;
+    order: 2;
+    margin-right: 5vw;
+    /* text-transform: uppercase; */
+}
+.search-tab button{
+    font-size: 1.5vw;
+    outline: none;
+    border: 0.3vw solid #a3b5ce;
+    background-color: #a3b5ce;
+    padding: 0.4vw;
+    order: 3;
+    margin-right: 3vw;
+    display: none;
+}
+.search-tab select{
+    order: 1;
+    font-size: 1.5vw;
+    outline: none;
+    border: 0.3vw solid #a3b5ce;
+    background-color: #1e232c;
+    padding: 0.4vw;
+    color: #a3b5ce;
+    margin-left: 3vw;
+    appearance: none;
+}
+section{
+    width: 100vw;
+    padding: 0vh 2vw 2vw 2vw;
+}
+section .goods{
+    background-color: wheat;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.card{
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    padding: 1vw;
+}
+.card figure{
+    height: 15vw;
+    width: 15vw;
+    overflow: hidden;
+    border-radius: 1vw;
+    grid-row: 1/4;
+    margin-right: 2vw;
+}
+.card figure img{
+    height: 15vw;
+    transition-duration: 1s;
+}
+.card h1{
+    font-size: 2.5vw;
+    font-family: 'Open Sans', sans-serif;
+    grid-column: 2/4;
+    margin-top: 1vw;
+    line-break: anywhere;
+}
+.prices{
+    grid-column: 2/4;
+}
+.prices span{
+    font-size: 2vw;
+    padding-right: 2vw;
+}
+.prices span i{
+    padding-left: 0.5vw;
+}
+.buy-now{
+    margin-bottom: 1vw;
+    background-image: linear-gradient(213deg,#ff7b48 7%,#f73c22 92%);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 1vw;
+}
+.buy-now i{
+    margin-right: 0.5vw;
+}
+.more-detail{
+    margin-bottom: 1vw;
+    background-image: linear-gradient(239deg,#ffac2d 7%,#ff8219);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+}
+.description{
+    padding: 1vw;
+    padding-top: 0vw;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    display: none;
+}
+.comment{
+    padding: 1vw;
+    display: none;
+}
+.comment-writter{
+    display: flex;
+}
+.comment-writter input{
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border: 0.2vw solid #a3b5ce;
+    flex: 1;
+}
+.comment-writter button{
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border: 0.2vw solid #a3b5ce;
+    margin-left: 1vw;
+    background: cyan;
+}
+.real-comment{
+    background: #f2f2f2;
+    display: flex;
+    margin: 1vw 0vw ;
+    padding: 0.5vw;
+    border-radius: 5vw;
+    align-items: center;
+}
+.real-comment img{
+    border-radius: 4vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+.real-comment aside{
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1vw 1vw 1vw 1vw;
+}
+.comment-writter button:hover{
+    color: red;
+    font-weight: 900;
+}
+.card figure img:hover{
+    transform: scale(1.5);
+}
+.buy-now:hover, .more-detail:hover{
+    color: chartreuse;
+}
+.nav-bar span i:hover{
+    color: tomato;
+}
+.search-tab input:focus{
+    border:solid tomato;
+}
+.search-tab select:focus{
+    border:solid tomato;
+}
+.slide-bar .nav-button .nav-buttons:hover{
+    color: cyan;
+}
+::placeholder{
+    color: #a3b5ce;
+}
+#on{
+    left: 0vw;
+}
+#off{
+    left: -52vw;
+}
+#navbar-start{
+    animation-name: navbar-store-animation;
+    animation-duration: 5s;
+    animation-direction: normal;
+}
+#navbar-return{
+    animation-name: navbar-store-animation;
+    animation-duration: 5s;
+    animation-direction: reverse;
+}
+
+@media screen and (max-width: 600px) {
+.nav-bar span h1{
+    font-size: 3.5vh;
+    margin: 0.5vh 4vh;
+    letter-spacing: 0.1vh;
+}
+.nav-bar span{
+    width: 100vw;
+    justify-content: space-around;
+}
+.nav-bar span i{
+    display: initial;
+}
+.slide-bar .nav-button .nav-buttons{
+    font-size: 2vh;
+    padding: 0vh 1vh;
+    align-self: auto;
+    margin: 1vh;
+}
+.search-tab select{
+    font-size: 1.5vh;
+    border: 0.3vh solid #a3b5ce;
+    padding: 0.4vh;
+    margin: 1vh;
+    order: 2;
+    width: 47.5vw;
+}
+.search-tab input{
+    font-size: 1.5vh;
+    border:  0.3vh solid #a3b5ce;
+    padding: 0.4vh;
+    width: 47vw;
+    margin-right: 0vh;
+}
+.search-tab button{
+    font-size: 1.5vh;
+    padding: 0.4vh;
+    border:  0.3vh solid #a3b5ce;
+    margin-right: 0vw;
+    width: 8vw;
+}
+.slide-bar{
+    flex-direction: column;
+    position: absolute;
+    top: 5.3vh;
+    background: #1e232c;;
+    height: 50vh;
+    border-top:  0.1vh solid #a3b5ce;
+    border-radius: 0vh 0vh 2vh;
+    /* display: none; */
+    transition-duration:2s;
+}
+.search-tab{
+    order: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+}
+.slide-bar .nav-button{
+    order: 2;
+    flex-direction: column;
+}
+.search-tab div{
+    margin: 1vh;
+}
+section .goods{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+section{
+    padding: 0vh 2vw;
+}
+.card{
+    grid-template-columns: min-content auto auto;
+    padding: 1vh;
+}
+.card figure{
+    height: 15vh;
+    width: 15vh;
+    margin-right: 1vh;
+}
+.card figure img{
+    height: 15vh;
+}
+.card h1{
+    font-size: 2vh;
+    margin-top: 0vh;
+    margin-left: 1vh;
+}
+.prices span{
+    font-size: 2vh;
+    padding-right: 2vh;
+    margin-left: 1vh;
+}
+.buy-now, .more-detail{
+    margin-bottom: 1vh;
+    font-size: 1.3vh;
+    margin-right: 0vw;
+    margin-left: 1vh;
+}
+.description{
+    padding: 1vh;
+    font-size: 1.5vh;
+    letter-spacing: 0.1vh;
+}
+.comment{
+    padding: 1vh;
+}
+.comment-writter input{
+    font-size: 1.3vh;
+    padding: 0.4vh;
+    border: 0.2vh solid #a3b5ce;
+}
+.comment-writter button{
+    font-size: 1.5vh;
+    padding: 0.5vh;
+    border: 0.2vh solid #a3b5ce;
+}
+.real-comment{
+    margin: 1vh 0vh;
+    padding: 0.5vh;
+    border-radius: 5vw;
+}
+.real-comment img{
+    border-radius: 4vh;
+    height: 3vh;
+    margin-right: 1vh;
+}
+.real-comment  aside{
+    font-size: 1.5vh;
+    border-radius: 1vh 1vh 1vh 1vh;
+}
+}
+
+@keyframes navbar-store-animation {
+    0%{
+        margin-top: -10vh;
+        margin-bottom: 110vh;
+    }
+    100%{
+        margin-top: 0vw;
+        margin-bottom: 0vh;
+    }
+}

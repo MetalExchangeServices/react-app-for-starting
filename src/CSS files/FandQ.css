@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Quicksand&family=Roboto:wght@400;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+.fandq-body{
+    background: #1d1c1d;
+    min-height: 100vh;
+}
+main{
+    width: 100%;
+    padding-bottom: 10vw;
+}
+main h1{
+    text-align: center;
+    padding-top: 4vw;
+    font-size: 4vw;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 4vw;
+}
+main div{
+    border-bottom: 0.5vw solid white;
+    overflow: hidden;
+    box-shadow: 0vw 0vw 1vw black;
+    margin: 2vw;
+    padding: 1vw;
+}
+main p{
+    font-size: 2vw;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.15vw;
+    padding-bottom: 1vw;
+}
+main article{
+    font-size: 1.5vw;
+    color: whitesmoke;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    overflow: hidden;
+    height: 0vw;
+}
+footer{
+    width: 100%;
+    background: #101010;
+    box-shadow: 0vw 0vw 1vw white;
+    position: fixed;
+    bottom: 0vw;
+}
+footer .FandQ-form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+footer .FandQ-form input{
+    font-size: 2vw;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    outline: none;
+    background: #1e232c;
+    color: #a3b5ce;
+    border: 0.1vw solid #a3b5ce;
+    font-weight: 500;
+}
+footer .FandQ-form button{
+    width: 9vw;
+    font-size: 2vw;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    border: 0.1vw solid wheat;
+    color: white;
+    background: none;
+    font-weight: 600;
+}
+.fa-arrow-right{
+    margin-left: 0.5vw;
+    color: turquoise;
+}
+
+
+/* media query */
+@media screen and (max-width: 800px) {
+    main div{
+        padding: 2vw;
+    }
+    main h1{
+        font-size: 5vw;
+    }
+    main article{
+        font-size: 2.5vw;
+    }
+    main p{
+        font-size: 3vw;
+    }
+    footer .FandQ-form input{
+        font-size: 3vw;
+    }
+    footer .FandQ-form button{
+        font-size: 3vw;
+        width: 12vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    main h1{
+        padding-top: 4vh;
+        font-size: 4vh;
+        margin-bottom: 4vh;
+    }
+    main div{
+        border-bottom: 0.5vh solid white;
+        overflow: hidden;
+        box-shadow: 0vh 0vh 1vh black;
+        margin: 2vh;
+        padding: 1vh
+    }
+    main p{
+        font-size: 2vh;
+        letter-spacing: 0.15vh;
+        padding-bottom: 1vh;
+    }
+    main article{
+        font-size: 1.5vh;
+        color: whitesmoke;
+        font-weight: 400;
+        letter-spacing: 0.1vh;
+        overflow: hidden;
+    }
+    footer .FandQ-form button{
+        font-size: 2vh;
+        margin: 0.5vh;
+        padding: 0.5vh;
+        border: 0.1vh solid wheat;
+        width: 9vh;
+    }
+    footer .FandQ-form input{
+        font-size: 2vh;
+        margin: 0.5vh;
+        padding: 0.5vh;
+        border: 0.1vh solid #a3b5ce;
+    }
+}
